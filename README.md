@@ -1,13 +1,3 @@
-<!-- Write a README.md for my project. It should contain the following sections:
-
-Overview section: explaining what the project does, which components it has
-
-1. Requirements: list the necessary pacagkes from backed and frontend
-2. Installation: how to install the project
-3. Configuration: how to configure the project
-4. Usage: how to use the project
-5. Future work: what is missing, what could be improved
- -->
 # Kafka Connect UI
 
 Kafka Connect UI is a web tool for managing connectors inside Kafka Connect clusters deployed in your own infrastructure. It is written in JavaScript/React (Frontend) and Python/FastAPI (Backend), using the [Kafka Connect REST Interface](https://docs.confluent.io/current/connect/references/restapi.html) extensively to interact with underlying Kafka Connect Instances.
@@ -36,16 +26,23 @@ Before installing the project, make sure you have all the requirements installed
 1. Install dependencies
 
     ```bash
+    cd frontend
     npm install
     ```
 
-2. Start the server
+2. Build
+
+    ```bash
+    npm run build
+    ```
+
+3. Start the server
 
     ```bash
     npm start
     ```
 
-3. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### 2.2 Backend
 
