@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "kafka-connect-ui-backend"
+version = "0.1.0"
+description = ""
+authors = ["Rodrigo Peternella <rodrigo.peternella@sumup.com>"]
+readme = "README.md"
+packages = [{include = "backend"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.103.1"
+uvicorn = "^0.23.2"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

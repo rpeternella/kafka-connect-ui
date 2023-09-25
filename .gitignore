@@ -1,0 +1,17 @@
+# Root Directory
+.venv/
+.node_modules/
+.idea/
+.vscode/
+.env
+.env.local
+.env.*.local
+
+# Frontend
+frontend/node_modules/
+frontend/out/
+frontend/build/
+frontend/coverage/
+
+# Backend
+backend/__pycache__/

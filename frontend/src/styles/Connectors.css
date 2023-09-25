@@ -1,0 +1,181 @@
+/* Default styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f2f2f2;
+}
+
+a {
+  color: #133bbe;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: #133bbe;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+/* Table styles */
+table {
+  max-width: none;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+td {
+  vertical-align: middle;
+}
+
+/* Form styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group select {
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group input[type="text"]:focus,
+.form-group select:focus {
+  border: 2px solid #4CAF50;
+  outline: none;
+}
+
+.form-group .error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.form-group .success {
+  color: green;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: #133bbe;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+/* Custom styles */
+.status-running {
+  color: green;
+}
+
+.status-paused {
+  color: orange;
+}
+
+.status-failed {
+  color: red;
+}
+
+.task-unassigned {
+  color: gray;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filters label {
+  margin-right: 10px;
+}
+
+.filters select {
+  width: 200px;
+}
+
+tr.running td.taskState {
+  color: #28a745;
+}
+
+tr.paused td.taskState {
+  color: #ffc107;
+}
+
+tr.failed td.taskState {
+  color: #dc3545;
+}
+
+tr.restarting td.taskState {
+  color: #ffc107;
+}
+
+.restart-success-message {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.restart-error-message {
+  background-color: red;
+  border-color: #c3e6cb;
+  color: #155724;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
